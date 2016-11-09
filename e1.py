@@ -11,7 +11,6 @@ rows = soup.find_all("tr")
 
 with open("ELECTION_ID", "w") as out:
     for row in rows:
-        #print (row)
         id = str(row.get("id"))
         begin = id.find("election-id-")
         if (begin != -1):
