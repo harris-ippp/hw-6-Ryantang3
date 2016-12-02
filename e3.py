@@ -21,7 +21,7 @@ def plot_county_data(county):
     county_data = data[data.index == county]
 
     graph = county_data.plot(x="Year", y="Republican Share")
-    graph.get_figure().savefig('accomack.png')
+    graph.get_figure().savefig('accomack.png') ##Why not just use the county name?
 
 column_headers = ["Democratic", "Republican", "Total Votes Cast", "Year"]
 hist_list = []
